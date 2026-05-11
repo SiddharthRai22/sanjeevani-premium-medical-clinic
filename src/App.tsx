@@ -162,9 +162,12 @@ export default function App() {
             <NavItem href="#services">Services</NavItem>
             <NavItem href="#founders">Expert Team</NavItem>
             <NavItem href="#testimonials">Reviews</NavItem>
-            <button className="bg-sky-600 hover:bg-sky-700 text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-sky-500/20 active:scale-95 transition-all">
+            <a 
+              href="#appointment"
+              className="bg-sky-600 hover:bg-sky-700 text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-sky-500/20 active:scale-95 transition-all"
+            >
               Consult Now
-            </button>
+            </a>
           </div>
 
           <button 
@@ -184,7 +187,13 @@ export default function App() {
             <a href="#services" className="text-2xl font-bold text-slate-900" onClick={() => setMobileMenuOpen(false)}>Services</a>
             <a href="#founders" className="text-2xl font-bold text-slate-900" onClick={() => setMobileMenuOpen(false)}>Founders</a>
             <a href="#testimonials" className="text-2xl font-bold text-slate-900" onClick={() => setMobileMenuOpen(false)}>Reviews</a>
-            <button className="bg-sky-600 text-white py-4 rounded-2xl font-bold text-lg">Book Appointment</button>
+            <a 
+              href="#appointment" 
+              className="bg-sky-600 text-white py-4 rounded-2xl font-bold text-lg"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Book Appointment
+            </a>
           </div>
         </div>
       )}
@@ -213,13 +222,19 @@ export default function App() {
               Sanjeevani combines over five decades of medical expertise with modern technology to provide families with premium healthcare services.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <button className="w-full sm:w-auto bg-sky-600 hover:bg-sky-700 text-white px-8 py-4 rounded-full font-bold shadow-xl shadow-sky-500/30 flex items-center justify-center gap-2 group transition-all active:scale-95">
+              <a 
+                href="#appointment"
+                className="w-full sm:w-auto bg-sky-600 hover:bg-sky-700 text-white px-8 py-4 rounded-full font-bold shadow-xl shadow-sky-500/30 flex items-center justify-center gap-2 group transition-all active:scale-95"
+              >
                 Make an Appointment
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-900 px-8 py-4 rounded-full font-bold border border-slate-200 flex items-center justify-center gap-2 transition-all active:scale-95">
+              </a>
+              <a 
+                href="#services"
+                className="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-900 px-8 py-4 rounded-full font-bold border border-slate-200 flex items-center justify-center gap-2 transition-all active:scale-95"
+              >
                 View Services
-              </button>
+              </a>
             </div>
             
             <div className="mt-12 flex flex-wrap justify-center lg:justify-start items-center gap-6 sm:gap-10 border-t border-slate-200 pt-8">
@@ -326,9 +341,12 @@ export default function App() {
               <p className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-slate-900 mb-6 tracking-tight leading-tight">The Multi-Generational Team Behind Your Wellness</p>
               <p className="text-slate-500 text-sm sm:text-base lg:text-lg leading-relaxed">Our clinic is powered by a legacy of healthcare professionals dedicated to providing exceptional care.</p>
             </div>
-            <button className="flex items-center gap-2 text-sky-600 font-bold hover:gap-4 transition-all group shrink-0">
+            <a 
+              href="#founders"
+              className="flex items-center gap-2 text-sky-600 font-bold hover:gap-4 transition-all group shrink-0"
+            >
               View Full Team <ArrowRight size={20} className="group-hover:translate-x-1" />
-            </button>
+            </a>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
@@ -407,9 +425,12 @@ export default function App() {
                 <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-6 leading-tight">Ready to Prioritize Your Family's Health?</h2>
                 <p className="text-slate-300 text-base sm:text-lg mb-10 max-w-lg mx-auto lg:mx-0">Book a priority consultation today and experience premium healthcare that puts you first.</p>
                 <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-6">
-                  <button className="bg-sky-600 hover:bg-sky-700 text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 group transition-all shadow-xl shadow-sky-900/40">
+                  <a 
+                    href="#appointment"
+                    className="bg-sky-600 hover:bg-sky-700 text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 group transition-all shadow-xl shadow-sky-900/40"
+                  >
                     Book Now <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
-                  </button>
+                  </a>
                   <div className="flex items-center justify-center gap-3 text-white">
                     <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center shrink-0">
                       <Phone size={20} />
@@ -424,8 +445,8 @@ export default function App() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div className="p-6 sm:p-8 bg-white/5 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-white/10 hover:bg-white/10 transition-colors">
                   <Clock className="text-sky-400 mb-4" size={32} />
-                  <h4 className="text-white font-bold mb-2">Flexible Hours</h4>
-                  <p className="text-slate-400 text-sm">Mon-Sat: 09:00 - 20:00</p>
+                  <h4 className="text-white font-bold mb-2">Clinic Hours</h4>
+                  <p className="text-slate-400 text-sm">Mon-Sat: 10 AM - 8 PM</p>
                 </div>
                 <div className="p-6 sm:p-8 bg-white/5 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-white/10 hover:bg-white/10 transition-colors">
                   <MapPin className="text-sky-400 mb-4" size={32} />
@@ -495,7 +516,7 @@ export default function App() {
                 <Clock className="text-sky-600 shrink-0" size={20} />
                 <div>
                   <p className="text-slate-900 font-bold text-sm">Opening Hours</p>
-                  <p className="text-slate-500 text-xs">Mon - Sat: 9 AM - 8 PM<br />Sun: Emergency Only</p>
+                  <p className="text-slate-500 text-xs">Mon - Sat: 10 AM - 8 PM<br />Sun: Emergency Only</p>
                 </div>
               </div>
             </div>
