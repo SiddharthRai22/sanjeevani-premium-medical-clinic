@@ -19,7 +19,8 @@ import {
   Star,
   ArrowRight,
   Menu,
-  X
+  X,
+  MessageCircle
 } from "lucide-react";
 import { useState, useEffect, ReactNode } from "react";
 
@@ -226,7 +227,7 @@ export default function App() {
                 href="#appointment"
                 className="w-full sm:w-auto bg-sky-600 hover:bg-sky-700 text-white px-8 py-4 rounded-full font-bold shadow-xl shadow-sky-500/30 flex items-center justify-center gap-2 group transition-all active:scale-95"
               >
-                Make an Appointment
+                Book Consultation
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a 
@@ -298,34 +299,34 @@ export default function App() {
       <section id="services" className="py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16 lg:mb-24">
-            <h2 className="font-display text-sky-600 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs mb-4">Our Specializations</h2>
-            <p className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-slate-900 mb-6 tracking-tight">Healthcare Solutions for Every Family Member</p>
-            <p className="text-slate-500 leading-relaxed text-sm sm:text-base lg:text-lg">From pediatric care to complex diagnostics, we provide a wide range of services under one roof with expert supervision.</p>
+            <h2 className="font-display text-sky-600 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs mb-4">OUR MEDICAL SERVICES</h2>
+            <p className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-slate-900 mb-6 tracking-tight">Comprehensive Healthcare for Every Stage of Life</p>
+            <p className="text-slate-500 leading-relaxed text-sm sm:text-base lg:text-lg">We provide trusted medical services with experienced specialists, advanced diagnostics, and personalized treatment focused on your family’s complete wellbeing.</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <ServiceCard 
               icon={Baby}
-              title="Pediatric Care"
-              description="Comprehensive child primary healthcare including well-child check-ups and treatment for childhood illnesses."
+              title="Child Care"
+              description="Complete healthcare for children including regular checkups, treatment, and health guidance."
               delay={0.1}
             />
             <ServiceCard 
               icon={User}
               title="Women's Health"
-              description="Specialized care in gynecology, maternal health, and women's wellness led by our expert female consultants."
+              description="Healthcare services for women including pregnancy care, health checkups, and consultations."
               delay={0.2}
             />
             <ServiceCard 
               icon={Activity}
-              title="Adult Health"
-              description="Holistic primary care and chronic disease management for adults, focusing on preventive medicine."
+              title="General Health"
+              description="Medical care for adults including routine checkups, treatment, and health advice."
               delay={0.3}
             />
             <ServiceCard 
               icon={Stethoscope}
               title="Diagnostics"
-              description="Advanced pathological investigations using state-of-the-art machinery for accurate results."
+              description="Modern lab testing and diagnostic services for accurate and quick medical reports."
               delay={0.4}
             />
           </div>
@@ -337,15 +338,15 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end mb-16 lg:mb-24 gap-8 text-center lg:text-left">
             <div className="max-w-2xl">
-              <h2 className="font-display text-sky-600 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs mb-4">Meet Our Experts</h2>
-              <p className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-slate-900 mb-6 tracking-tight leading-tight">The Multi-Generational Team Behind Your Wellness</p>
-              <p className="text-slate-500 text-sm sm:text-base lg:text-lg leading-relaxed">Our clinic is powered by a legacy of healthcare professionals dedicated to providing exceptional care.</p>
+              <h2 className="font-display text-sky-600 font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs mb-4">OUR DOCTORS</h2>
+              <p className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-slate-900 mb-6 tracking-tight leading-tight">Meet Our Experienced Medical Team</p>
+              <p className="text-slate-500 text-sm sm:text-base lg:text-lg leading-relaxed">Our doctors are dedicated to providing quality healthcare and personalized treatment for every patient.</p>
             </div>
             <a 
               href="#founders"
               className="flex items-center gap-2 text-sky-600 font-bold hover:gap-4 transition-all group shrink-0"
             >
-              View Full Team <ArrowRight size={20} className="group-hover:translate-x-1" />
+              View All Doctors <ArrowRight size={20} className="group-hover:translate-x-1" />
             </a>
           </div>
 
@@ -353,25 +354,25 @@ export default function App() {
             <FounderCard 
               image="/images/doctor-vk.png"
               name="Dr. V.K. Sanjeev"
-              title="Senior Consultant & Founder"
+              title="Senior Consultant"
               experience="50+"
-              description="Head of our healthcare team with over 5 decades of clinical wisdom, leading the clinic's mission of trust and integrity."
+              description="Experienced healthcare professional dedicated to providing trusted medical care and guidance for patients."
               delay={0.1}
             />
             <FounderCard 
               image="/images/doctor-amit.png"
               name="Dr. Amit Kumar"
-              title="Board-Certified Pediatrician"
+              title="Child Specialist"
               experience="15+"
-              description="Expert in pediatric primary health, focusing on child development and promoting long-term family wellness."
+              description="Focused on children’s health, regular checkups, and complete care for growing families."
               delay={0.2}
             />
             <FounderCard 
               image="/images/doctor-rakhi.png"
               name="Dr. Rakhi"
-              title="Women's Health Specialist"
+              title="Women’s Health Specialist"
               experience="12+"
-              description="Passionate expert in maternal-fetal health and pathology, building lasting doctor-patient bonds based on empathy."
+              description="Providing healthcare support and treatment for women with care, comfort, and attention."
               delay={0.3}
             />
           </div>
@@ -446,12 +447,12 @@ export default function App() {
                 <div className="p-6 sm:p-8 bg-white/5 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-white/10 hover:bg-white/10 transition-colors">
                   <Clock className="text-sky-400 mb-4" size={32} />
                   <h4 className="text-white font-bold mb-2">Clinic Hours</h4>
-                  <p className="text-slate-400 text-sm">Mon-Sat: 10 AM - 8 PM</p>
+                  <p className="text-slate-400 text-sm">Mon – Sat | 10 AM – 8 PM</p>
                 </div>
                 <div className="p-6 sm:p-8 bg-white/5 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-white/10 hover:bg-white/10 transition-colors">
                   <MapPin className="text-sky-400 mb-4" size={32} />
                   <h4 className="text-white font-bold mb-2">Location</h4>
-                  <p className="text-slate-400 text-sm">JP Chowk, Darbhanga</p>
+                  <p className="text-slate-400 text-sm">Healthcare Center, Medical District</p>
                 </div>
               </div>
             </div>
@@ -471,7 +472,7 @@ export default function App() {
                 <span className="font-display font-bold text-lg text-slate-900 tracking-tight uppercase">SANJEEVANI</span>
               </div>
               <p className="text-slate-500 text-sm leading-relaxed mb-8">
-                Premium healthcare services established with a vision to provide accessible, compassionate, and expert medical care for all generations.
+                Sanjeevani provides trusted healthcare services with experienced doctors and modern medical support for patients and families.
               </p>
               <div className="flex gap-4">
                 <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-slate-400 border border-slate-200 hover:text-sky-600 cursor-pointer transition-colors">
@@ -488,7 +489,7 @@ export default function App() {
               <ul className="flex flex-col gap-4">
                 <li><a href="#" className="text-slate-500 hover:text-sky-600 text-sm transition-colors">About Clinic</a></li>
                 <li><a href="#" className="text-slate-500 hover:text-sky-600 text-sm transition-colors">Our Services</a></li>
-                <li><a href="#" className="text-slate-500 hover:text-sky-600 text-sm transition-colors">Meet Doctors</a></li>
+                <li><a href="#" className="text-slate-500 hover:text-sky-600 text-sm transition-colors">Our Doctors</a></li>
                 <li><a href="#" className="text-slate-500 hover:text-sky-600 text-sm transition-colors">Contact Us</a></li>
               </ul>
             </div>
@@ -496,10 +497,10 @@ export default function App() {
             <div>
               <h4 className="font-bold text-slate-900 mb-6">Services</h4>
               <ul className="flex flex-col gap-4">
-                <li><a href="#" className="text-slate-500 hover:text-sky-600 text-sm transition-colors">Pediatric Care</a></li>
-                <li><a href="#" className="text-slate-500 hover:text-sky-600 text-sm transition-colors">Women's Wellness</a></li>
-                <li><a href="#" className="text-slate-500 hover:text-sky-600 text-sm transition-colors">Pathology Lab</a></li>
-                <li><a href="#" className="text-slate-500 hover:text-sky-600 text-sm transition-colors">General Medicine</a></li>
+                <li><a href="#" className="text-slate-500 hover:text-sky-600 text-sm transition-colors">Child Care</a></li>
+                <li><a href="#" className="text-slate-500 hover:text-sky-600 text-sm transition-colors">Women’s Health</a></li>
+                <li><a href="#" className="text-slate-500 hover:text-sky-600 text-sm transition-colors">Diagnostics</a></li>
+                <li><a href="#" className="text-slate-500 hover:text-sky-600 text-sm transition-colors">General Health</a></li>
               </ul>
             </div>
 
@@ -516,7 +517,7 @@ export default function App() {
                 <Clock className="text-sky-600 shrink-0" size={20} />
                 <div>
                   <p className="text-slate-900 font-bold text-sm">Opening Hours</p>
-                  <p className="text-slate-500 text-xs">Mon - Sat: 10 AM - 8 PM<br />Sun: Emergency Only</p>
+                  <p className="text-slate-500 text-xs">Mon - Sat: 10 AM - 8 PM<br />Sunday: Emergency Only</p>
                 </div>
               </div>
             </div>
@@ -524,7 +525,7 @@ export default function App() {
 
           <div className="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-xs text-center">
-              © {new Date().getFullYear()} Sanjeevani Medical Clinic. All Rights Reserved.
+              © 2026 Sanjeevani Medical Clinic. All Rights Reserved.
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-slate-400 hover:text-sky-600 text-xs transition-colors">Privacy Policy</a>
@@ -533,6 +534,41 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {/* Floating WhatsApp Button */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 1 }}
+        className="fixed bottom-6 right-6 z-[60] flex flex-col items-end gap-2"
+      >
+        <div className="relative group">
+          {/* Tooltip */}
+          <div className="absolute right-full mr-4 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-slate-900/90 backdrop-blur-sm text-white text-[10px] font-bold uppercase tracking-widest rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap">
+            Chat With Us
+            {/* Arrow */}
+            <div className="absolute top-1/2 -translate-y-1/2 -right-1 border-4 border-transparent border-l-slate-900/90"></div>
+          </div>
+          
+          <a
+            href="https://wa.me/+918822556677" // Using the number from CTA section
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative block w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] text-white rounded-full shadow-2xl shadow-green-500/40 flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 group"
+          >
+            {/* Pulse Effect */}
+            <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20 group-hover:opacity-40"></span>
+            
+            {/* Custom Logo */}
+            <img 
+              src="/images/whatsapp.png" 
+              alt="WhatsApp" 
+              className="relative z-10 w-8 h-8 sm:w-10 sm:h-10 object-contain"
+              referrerPolicy="no-referrer"
+            />
+          </a>
+        </div>
+      </motion.div>
     </div>
   );
 }
