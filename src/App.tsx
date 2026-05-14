@@ -213,13 +213,13 @@ export default function App() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-100 text-sky-700 text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-6 lg:mb-8">
               <ShieldCheck size={14} />
-              Accredited Clinical Excellence
+              Trusted Healthcare Excellence
             </div>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-slate-900 leading-[1.1] mb-6 lg:mb-8">
               Compassionate Care, <span className="text-sky-600 underline decoration-sky-200 decoration-4 sm:decoration-8 underline-offset-4">Advanced</span> Medicine.
             </h1>
             <p className="text-slate-500 text-base sm:text-lg lg:text-xl leading-relaxed mb-8 lg:mb-10 max-w-xl mx-auto lg:mx-0">
-              Sanjeevani combines over five decades of medical expertise with modern technology to provide families with premium healthcare services.
+              At Sanjeevani, we provide trusted medical care with experienced doctors, advanced technology, and a patient-first approach focused on your family’s wellbeing.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
               <a 
@@ -239,18 +239,18 @@ export default function App() {
             
             <div className="mt-12 flex flex-wrap justify-center lg:justify-start items-center gap-6 sm:gap-10 border-t border-slate-200 pt-8">
               <div>
-                <span className="block text-2xl sm:text-3xl font-bold font-display text-slate-900 tracking-tight">50+</span>
-                <span className="text-[10px] sm:text-xs text-slate-500 uppercase tracking-widest font-semibold">Years Exp.</span>
+                <span className="block text-2xl sm:text-3xl font-bold font-display text-slate-900 tracking-tight">25+</span>
+                <span className="text-[10px] sm:text-xs text-slate-500 uppercase tracking-widest font-semibold">Years Experience</span>
               </div>
               <div className="h-8 w-px bg-slate-200 hidden sm:block"></div>
               <div>
-                <span className="block text-2xl sm:text-3xl font-bold font-display text-slate-900 tracking-tight">10k+</span>
-                <span className="text-[10px] sm:text-xs text-slate-500 uppercase tracking-widest font-semibold">Patients</span>
+                <span className="block text-2xl sm:text-3xl font-bold font-display text-slate-900 tracking-tight">10K+</span>
+                <span className="text-[10px] sm:text-xs text-slate-500 uppercase tracking-widest font-semibold">Happy Patients</span>
               </div>
               <div className="h-8 w-px bg-slate-200 hidden sm:block"></div>
               <div>
                 <span className="block text-2xl sm:text-3xl font-bold font-display text-slate-900 tracking-tight">24/7</span>
-                <span className="text-[10px] sm:text-xs text-slate-500 uppercase tracking-widest font-semibold">Support</span>
+                <span className="text-[10px] sm:text-xs text-slate-500 uppercase tracking-widest font-semibold">Patient Support</span>
               </div>
             </div>
           </motion.div>
@@ -277,7 +277,7 @@ export default function App() {
               </div>
               <div>
                 <p className="text-[8px] sm:text-[10px] text-slate-500 font-bold uppercase tracking-widest">Trust Factor</p>
-                <p className="text-xs sm:text-base font-bold text-slate-900 leading-tight">Patient Safety Verified</p>
+                <p className="text-xs sm:text-base font-bold text-slate-900 leading-tight">Trusted Patient Care</p>
               </div>
             </div>
             
@@ -351,7 +351,7 @@ export default function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             <FounderCard 
-              image="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=800"
+              image="/images/doctor-vk.png"
               name="Dr. V.K. Sanjeev"
               title="Senior Consultant & Founder"
               experience="50+"
@@ -359,16 +359,16 @@ export default function App() {
               delay={0.1}
             />
             <FounderCard 
-              image="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=800"
-              name="Dr. Amit Sanjeev"
+              image="/images/doctor-amit.png"
+              name="Dr. Amit Kumar"
               title="Board-Certified Pediatrician"
               experience="15+"
               description="Expert in pediatric primary health, focusing on child development and promoting long-term family wellness."
               delay={0.2}
             />
             <FounderCard 
-              image="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=800"
-              name="Dr. Rakhi Sanjeev"
+              image="/images/doctor-rakhi.png"
+              name="Dr. Rakhi"
               title="Women's Health Specialist"
               experience="12+"
               description="Passionate expert in maternal-fetal health and pathology, building lasting doctor-patient bonds based on empathy."
@@ -422,21 +422,21 @@ export default function App() {
             
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="text-center lg:text-left">
-                <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-6 leading-tight">Ready to Prioritize Your Family's Health?</h2>
-                <p className="text-slate-300 text-base sm:text-lg mb-10 max-w-lg mx-auto lg:mx-0">Book a priority consultation today and experience premium healthcare that puts you first.</p>
+                <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-6 leading-tight">Your Family’s Health Comes First.</h2>
+                <p className="text-slate-300 text-base sm:text-lg mb-10 max-w-lg mx-auto lg:mx-0">Schedule your consultation today and receive expert healthcare services designed around comfort, trust, and personalized treatment.</p>
                 <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-6">
                   <a 
                     href="#appointment"
                     className="bg-sky-600 hover:bg-sky-700 text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 group transition-all shadow-xl shadow-sky-900/40"
                   >
-                    Book Now <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                    Book Consultation <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
                   </a>
                   <div className="flex items-center justify-center gap-3 text-white">
                     <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center shrink-0">
                       <Phone size={20} />
                     </div>
                     <div className="text-left">
-                      <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest leading-none mb-1">Call Us Now</p>
+                      <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest leading-none mb-1">Call Us Today</p>
                       <p className="text-base font-bold">+91 88225-56677</p>
                     </div>
                   </div>
@@ -451,7 +451,7 @@ export default function App() {
                 <div className="p-6 sm:p-8 bg-white/5 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-white/10 hover:bg-white/10 transition-colors">
                   <MapPin className="text-sky-400 mb-4" size={32} />
                   <h4 className="text-white font-bold mb-2">Location</h4>
-                  <p className="text-slate-400 text-sm">Sanjeevani Square, Medical District</p>
+                  <p className="text-slate-400 text-sm">JP Chowk, Darbhanga</p>
                 </div>
               </div>
             </div>
@@ -509,7 +509,7 @@ export default function App() {
                 <MapPin className="text-sky-600 shrink-0" size={20} />
                 <p className="text-slate-500 text-sm leading-relaxed">
                   Sanjeevani Wellness Center,<br />
-                  12/A Sanjeevani Square, Medical District
+                  JP Chowk, Darbhanga
                 </p>
               </div>
               <div className="flex items-start gap-3">
